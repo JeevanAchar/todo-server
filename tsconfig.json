@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "ES6",
     "module": "commonjs",
-    "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
+    "outDir": "dist",
+    "baseUrl": "./",
     "rootDir": "./src",
-    "outDir": "./dist",
-    "baseUrl": ".",
-    "types": ["node"],
+    "skipLibCheck": true,
+    "ignoreDeprecations": "6.0",
     "paths": {
       "@app": ["./src/app"]
     }
