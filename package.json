@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --config nodemon.json",
-    "build": "tsc && tsc-alias && npm run copy-assets",
-    "copy-assets": "mkdir -p dist/public dist/templates && cp -r src/public/* dist/public/ && cp -r src/templates/* dist/templates/",
-    "start": "NODE_ENV=production node dist/start.js",
+    "build": "tsc && tsc-alias && node scripts/copy-assets.js",
+    "copy-assets": "node scripts/copy-assets.js",
+    "start": "node dist/start.js",
     "start:staging": "NODE_ENV=staging node dist/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

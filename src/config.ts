@@ -23,6 +23,6 @@ export type ConfigType = {
 export const config: ConfigType = {
   environment: process.env.NODE_ENV as string,
   PORT: Number(process.env.PORT) || 3001,
-  HOST: process.env.HOST ?? "127.0.0.1",
+  HOST: process.env.HOST ?? "0.0.0.0",
   MONGO_URI: process.env.MONGO_URI! as string,
 };
